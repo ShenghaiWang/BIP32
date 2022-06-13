@@ -9,19 +9,14 @@ let package = Package(
         .macOS(.v10_12), .iOS(.v9), .tvOS(.v9), .watchOS(.v2)
     ],
     products: [
-        .library(
-            name: "BIP32",
-            targets: ["BIP32"]),
+        .library(name: "BIP32", targets: ["BIP32"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ShenghaiWang/BIP39.git", branch: "master")
+        .package(url: "https://github.com/ShenghaiWang/BIP39.git", branch: "master"),
     ],
     targets: [
-        .target(
-            name: "BIP32",
-            dependencies: ["BIP39"]),
-        .testTarget(
-            name: "BIP32Tests",
-            dependencies: ["BIP32"]),
+        .target(name: "secp256k1"),
+        .target(name: "BIP32", dependencies: ["BIP39", "secp256k1"]),
+        .testTarget( name: "BIP32Tests", dependencies: ["BIP32"]),
     ]
 )
