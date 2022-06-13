@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "bip39",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ShenghaiWang/BIP39.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "1fb1128f414e519377ece2071902541796e1f7ea"
+      }
+    },
+    {
+      "identity" : "cryptoswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/CryptoSwift.git",
+      "state" : {
+        "revision" : "039f56c5d7960f277087a0be51f5eb04ed0ec073",
+        "version" : "1.5.1"
+      }
+    }
+  ],
+  "version" : 2
+}
